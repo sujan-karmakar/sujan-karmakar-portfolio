@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Project</title>
+	<link rel="icon" type="image/png" href="../assets/portfolioLogo.jpg">
+	<link href="https://cdn.jsdelivr.net/npm/@coreui/coreui@5.4.3/dist/css/coreui.min.css" rel="stylesheet" integrity="sha384-oMIIhJL1T5s+PxJr6+Qb0pO1IRFB6OGMM+J57UBT3UQKxSVsb++MkXpu9cLqaJxu" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/@coreui/icons/css/all.min.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../assets/navStyle.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+	<nav class="navbar">
+		<div class="nav-brand">
+			<div class="logo">SK</div>
+			<div class="brand-text">
+				<div class="brand-title">sk-05</div>
+				<div class="brand-subtitle">CSE Undergraduate Student</div>
+			</div>
+		</div>
+		<ul class="nav-links">
+			<li><a href="../index.html" class="nav-item">Home</a></li>
+			<li><a href="../Education/index.html" class="nav-item">Education</a></li>
+			<li><a href="../Skills/index.html" class="nav-item">Skills</a></li>
+			<li><a href="../Projects/index.html" class="nav-item">Projects</a></li>
+			<li><a href="../Certification/index.html" class="nav-item">Certification</a></li>
+			<li><a href="../Contact/index.html" class="nav-item">Contact Me</a></li>
+			<li class="social-icons mobile-socials">
+				<a href="https://www.instagram.com/s.karmakar18?igsh=NThqZTl3MzJ3bDZn" target="_blank" class="social-icon instagram"><i class="fa-brands fa-instagram"></i></a>
+				<a href="https://github.com/sujan-karmakar" target="_blank" class="social-icon github"><i class="fa-brands fa-github"></i></a>
+				<a href="https://www.linkedin.com/in/sujan-karmakar/" target="_blank" class="social-icon linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+				<a href="https://www.hackerrank.com/profile/sk_05" target="_blank" class="social-icon hackerrank"><i class="fa-brands fa-hackerrank"></i></a>
+				<a href="https://leetcode.com/u/sk-05/" target="_blank" class="social-icon leetcode"><i class="cib-leetcode"></i></a>
+			</li>
+		</ul>
+		<div class="social-icons desktop-socials">
+			<a href="https://www.instagram.com/s.karmakar18?igsh=NThqZTl3MzJ3bDZn" target="_blank" class="social-icon instagram"><i class="fa-brands fa-instagram"></i></a>
+			<a href="https://github.com/sujan-karmakar" target="_blank" class="social-icon github"><i class="fa-brands fa-github"></i></a>
+			<a href="https://www.linkedin.com/in/sujan-karmakar/" target="_blank" class="social-icon linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+			<a href="https://www.hackerrank.com/profile/sk_05" target="_blank" class="social-icon hackerrank"><i class="fa-brands fa-hackerrank"></i></a>
+			<a href="https://leetcode.com/u/sk-05/" target="_blank" class="social-icon leetcode"><i class="cib-leetcode"></i></a>
+		</div>
+		<div class="hamburger">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
+		</div>
+		<div id="nav-indicator"></div>
+	</nav>
+
+	<div class="projects-container">
+		<div class="header-section">
+			<h1 class="page-title"><span class="floating-text">Projects</span></h1>
+			<p class="page-description">
+				I enjoy building things to learn and practice my coding skills. This <span class="highlight">Portfolio Website</span> is one of my key projects, showing what I can do with web design. I have also created several smaller applications to practice my logic. For example, I built a <span class="highlight">Currency Converter</span> to work with calculations, and fun games like <span class="highlight">Tic-Tac-Toe</span> and <span class="highlight">Rock Paper Scissors</span> to understand game logic. These projects might be small, but they have helped me understand programming fundamentals better and improve my problem-solving skills.
+			</p>
+		</div>
+
+		<div class="projects-grid">
+			<!-- Portfolio -->
+			<div class="project-card">
+				<div class="project-header">
+					<h3>Portfolio Website</h3>
+					<div class="tech-stack">
+						<span class="tech-tag"><i class="fa-brands fa-html5"></i> HTML</span>
+						<span class="tech-tag"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+						<span class="tech-tag"><i class="fa-brands fa-js"></i> JS</span>
+					</div>
+				</div>
+				<div class="project-image">
+					<img src="../assets/project-images/portfolio.png" alt="Portfolio Website">
+				</div>
+				<p class="project-desc">
+					A personal portfolio website to showcase my skills, education, and projects. Designed with a modern neon aesthetic and glassmorphism effects.
+				</p>
+				<a href="../index.html" class="demo-btn">View <i class="fa-solid fa-eye"></i></a>
+				<a href="https://github.com/sujan-karmakar/sujan-karmakar-portfolio" target="_blank" class="view-btn">Code <i class="fa-brands fa-github"></i></a>
+			</div>
+
+			<!-- Simon Game -->
+			<div class="project-card">
+				<div class="project-header">
+					<h3>Simon Game</h3>
+					<div class="tech-stack">
+						<span class="tech-tag"><i class="fa-brands fa-html5"></i> HTML</span>
+						<span class="tech-tag"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+						<span class="tech-tag"><i class="fa-brands fa-js"></i> JS</span>
+					</div>
+				</div>
+				<div class="project-image">
+					<img src="../assets/project-images/simon-says-game.png" alt="Simon Game">
+				</div>
+				<p class="project-desc">
+					Test your memory by repeating increasingly complex color sequences. Features include level progression, high score tracking, and keyboard controls.
+				</p>
+				<a href="../assets/Projects/Simon Game/index.html" target="_blank" class="demo-btn">View <i class="fa-solid fa-eye"></i></a>
+				<a href="https://github.com/sujan-karmakar/Simon-Says-Game" target="_blank" class="view-btn">Code <i class="fa-brands fa-github"></i></a>
+			</div>
+
+			<!-- Todo App -->
+			<div class="project-card">
+				<div class="project-header">
+					<h3>Todo App</h3>
+					<div class="tech-stack">
+						<span class="tech-tag"><i class="fa-brands fa-html5"></i> HTML</span>
+						<span class="tech-tag"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+						<span class="tech-tag"><i class="fa-brands fa-js"></i> JS</span>
+					</div>
+				</div>
+				<div class="project-image">
+					<img src="../assets/project-images/todo-app.png" alt="Todo App">
+				</div>
+				<p class="project-desc">
+					A simple Todo List application that helps you organize your daily tasks. Add, delete, and manage your to-dos with an intuitive user interface. The app is fully responsive and works on all devices.
+				</p>
+				<a href="../assets/Projects/Todo App/index.html" target="_blank" class="demo-btn">View <i class="fa-solid fa-eye"></i></a>
+				<a href="https://github.com/sujan-karmakar/Todo-App" target="_blank" class="view-btn">Code <i class="fa-brands fa-github"></i></a>
+			</div>
+
+			<!-- Tic-Tac-Toe -->
+			<div class="project-card">
+				<div class="project-header">
+					<h3>Tic-Tac-Toe</h3>
+					<div class="tech-stack">
+						<span class="tech-tag"><i class="fa-brands fa-html5"></i> HTML</span>
+						<span class="tech-tag"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+						<span class="tech-tag"><i class="fa-brands fa-js"></i> JS</span>
+					</div>
+				</div>
+				<div class="project-image">
+					<img src="../assets/project-images/tic-tac-toe.png" alt="Tic-Tac-Toe Game">
+				</div>
+				<p class="project-desc">
+					A classic Tic-Tac-Toe game with a clean user interface. Features include player turn tracking and win/draw detection logic.
+				</p>
+				<a href="../assets/Projects/Tic Tac Toe game/tic-tac-toe/index.html" target="_blank" class="demo-btn">View <i class="fa-solid fa-eye"></i></a>
+				<a href="https://github.com/sujan-karmakar/tic-tac-toe" target="_blank" class="view-btn">Code <i class="fa-brands fa-github"></i></a>
+			</div>
+
+			<!-- Currency Converter -->
+			<div class="project-card">
+				<div class="project-header">
+					<h3>Currency Converter</h3>
+					<div class="tech-stack">
+						<span class="tech-tag"><i class="fa-brands fa-html5"></i> HTML</span>
+						<span class="tech-tag"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+						<span class="tech-tag"><i class="fa-brands fa-js"></i> JS</span>
+						<span class="tech-tag"><i class="fa-solid fa-globe"></i> API</span>
+					</div>
+				</div>
+				<div class="project-image">
+					<img src="../assets/project-images/currency-converter.png" alt="Currency Converter">
+				</div>
+				<p class="project-desc">
+					A real-time currency converter application that fetches live exchange rates using an API to perform accurate conversions between different currencies.
+				</p>
+				<a href="../assets/Projects/Currency Converter/Currency-Converter/index.html" target="_blank" class="demo-btn">View <i class="fa-solid fa-eye"></i></a>
+				<a href="https://github.com/sujan-karmakar/Currency-Converter" target="_blank" class="view-btn">Code <i class="fa-brands fa-github"></i></a>
+			</div>
+
+			<!-- Rock Paper Scissors -->
+			<div class="project-card">
+				<div class="project-header">
+					<h3>Rock Paper Scissors</h3>
+					<div class="tech-stack">
+						<span class="tech-tag"><i class="fa-brands fa-html5"></i> HTML</span>
+						<span class="tech-tag"><i class="fa-brands fa-css3"></i> CSS</span>
+						<span class="tech-tag"><i class="fa-brands fa-js"></i> JS</span>
+					</div>
+				</div>
+				<div class="project-image">
+					<img src="../assets/project-images/rock-paper-scissors.png" alt="Rock Paper Scissors">
+				</div>
+				<p class="project-desc">
+					An interactive Rock Paper Scissors game played against the computer. Includes score tracking and dynamic result messages.
+				</p>
+				<a href="../assets/Projects/Rock paper scissors game/rock-paper-scissors/index.html" target="_blank" class="demo-btn">View <i class="fa-solid fa-eye"></i></a>
+				<a href="https://github.com/sujan-karmakar/rock-paper-scissors" target="_blank" class="view-btn">Code <i class="fa-brands fa-github"></i></a>
+			</div>
+		</div>
+	</div>
+
+	<script src="../assets/navScript.js"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>
