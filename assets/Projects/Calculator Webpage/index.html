@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="outer-box">
+
+        <h1>Calculator</h1>
+
+        <input type="text" id="calculation-input">
+
+        <div id="container">
+
+            <div id="top-row">
+                <button class="function-btn" id="ac">AC</button>
+                <button class="function-btn" id="del">DEL</button>
+            </div>
+
+            <div id="numbers">
+                <button class="digit selectJS" id="one">1</button>
+                <button class="digit selectJS" id="two">2</button>
+                <button class="digit selectJS" id="three">3</button>
+                <button class="digit selectJS" id="four">4</button>
+                <button class="digit selectJS" id="five">5</button>
+                <button class="digit selectJS" id="six">6</button>
+                <button class="digit selectJS" id="seven">7</button>
+                <button class="digit selectJS" id="eight">8</button>
+                <button class="digit selectJS" id="nine">9</button>
+            </div>
+
+            <div id="right-side">
+                <button class="operator selectJS" id="add">+</button>
+                <button class="operator selectJS" id="sub">-</button>
+                <button class="operator selectJS" id="mul">x</button>
+                <button class="operator selectJS" id="div">/</button>
+            </div>
+
+            <div id="lower-row">
+                <button class="digit selectJS" id="zero">0</button>
+                <button class="digit selectJS" id="point">.</button>
+                <button class="operator selectJS" id="equal">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
