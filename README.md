@@ -8,6 +8,4 @@
   3. JavaScript
 
 ## Deployment Link :
-  
-
-Link - https://sujan-karmakar-portfolio.netlify.app/
+  <a href="https://sujan-karmakar-portfolio.netlify.app/">Sujan's Portfolio</a>
