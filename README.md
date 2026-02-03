@@ -1,11 +1,7 @@
-# Sujan Karmakar Portfolio
+# Sujan Karmakar - Portfolio
 
-## This is my own portfolio showcasing my education, skills, projects.
+Welcome to my personal portfolio website! This repository showcases my journey as a Computer Science and Engineering undergraduate student, featuring my skills, projects, education, and certifications.
 
-## Technologies :
-  1. HTML
-  2. CSS
-  3. JavaScript
+## 🚀 Live Demo
+Check out the live version of my portfolio here: **[Sujan's Portfolio](https://sujan-karmakar-portfolio.netlify.app/)**
 
-## Deployment Link :
-  <a href="https://sujan-karmakar-portfolio.netlify.app/">Sujan's Portfolio</a>
