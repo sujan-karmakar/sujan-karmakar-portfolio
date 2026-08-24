@@ -9,7 +9,7 @@
 	<link href="https://cdn.jsdelivr.net/npm/@coreui/coreui@5.4.3/dist/css/coreui.min.css" rel="stylesheet" integrity="sha384-oMIIhJL1T5s+PxJr6+Qb0pO1IRFB6OGMM+J57UBT3UQKxSVsb++MkXpu9cLqaJxu" crossorigin="anonymous">
 	<link href="https://cdn.jsdelivr.net/npm/@coreui/icons/css/all.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-	<link rel="stylesheet" href="../assets/navStyle.css">
+	<link rel="stylesheet" href="../navbar/navStyle.css">
 	<link rel="stylesheet" href="style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,43 +18,7 @@
 </head>
 
 <body>
-	<nav class="navbar">
-		<div class="nav-brand">
-			<div class="logo">SK</div>
-			<div class="brand-text">
-				<div class="brand-title">Sujan Karmakar</div>
-				<div class="brand-subtitle">CSE Undergraduate Student</div>
-			</div>
-		</div>
-		<ul class="nav-links">
-			<li><a href="../index.html" class="nav-item"><i class="fa-solid fa-house"></i> Home</a></li>
-			<li><a href="../Education/index.html" class="nav-item"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
-			<li><a href="../Skills/index.html" class="nav-item"><i class="fa-solid fa-code"></i> Skills</a></li>
-			<li><a href="../Projects/index.html" class="nav-item"><i class="fa-solid fa-briefcase"></i> Projects</a></li>
-			<li><a href="../Certification/index.html" class="nav-item"><i class="fa-solid fa-medal"></i> Certifications</a></li>
-			<li><a href="../Contact/index.html" class="nav-item"><i class="fa-solid fa-envelope"></i> Contact Me</a></li>
-			<li class="social-icons mobile-socials">
-				<a href="https://www.instagram.com/s.karmakar18?igsh=NThqZTl3MzJ3bDZn" target="_blank" class="social-icon instagram"><i class="fa-brands fa-instagram"></i></a>
-				<a href="https://github.com/sujan-karmakar" target="_blank" class="social-icon github"><i class="fa-brands fa-github"></i></a>
-				<a href="https://www.linkedin.com/in/sujan-karmakar/" target="_blank" class="social-icon linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
-				<a href="https://www.hackerrank.com/profile/sk_05" target="_blank" class="social-icon hackerrank"><i class="fa-brands fa-hackerrank"></i></a>
-				<a href="https://leetcode.com/u/sk-05/" target="_blank" class="social-icon leetcode"><i class="cib-leetcode"></i></a>
-			</li>
-		</ul>
-		<div class="social-icons desktop-socials">
-			<a href="https://www.instagram.com/s.karmakar18?igsh=NThqZTl3MzJ3bDZn" target="_blank" class="social-icon instagram"><i class="fa-brands fa-instagram"></i></a>
-			<a href="https://github.com/sujan-karmakar" target="_blank" class="social-icon github"><i class="fa-brands fa-github"></i></a>
-			<a href="https://www.linkedin.com/in/sujan-karmakar/" target="_blank" class="social-icon linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
-			<a href="https://www.hackerrank.com/profile/sk_05" target="_blank" class="social-icon hackerrank"><i class="fa-brands fa-hackerrank"></i></a>
-			<a href="https://leetcode.com/u/sk-05/" target="_blank" class="social-icon leetcode"><i class="cib-leetcode"></i></a>
-		</div>
-		<div class="hamburger">
-			<div class="line1"></div>
-			<div class="line2"></div>
-			<div class="line3"></div>
-		</div>
-		<div id="nav-indicator"></div>
-	</nav>
+	<div id="navbar-container" data-navbar-src="../navbar/nav.html"></div>
 
 	<div class="skills-container">
 		<div class="header-section">
@@ -263,8 +227,10 @@
 		</div>
 	</div>
 
-	<script src="../assets/navScript.js"></script>
+	<script src="../navbar/navLoader.js"></script>
+	<script src="../navbar/navScript.js"></script>
 	<script src="script.js"></script>
 </body>
 
 </html>
+

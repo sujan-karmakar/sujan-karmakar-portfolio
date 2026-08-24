@@ -1,3 +1,4 @@
+window.navbarReady.then(() => {
 const indicator = document.querySelector('#nav-indicator');
 const items = document.querySelectorAll('.nav-item');
 
@@ -34,7 +35,7 @@ if ('scrollRestoration' in history) {
 }
 
 // On page load, animate from the last position to the new one.
-window.addEventListener('DOMContentLoaded', async () => {
+const initializeNavbar = async () => {
     // Force scroll to top on refresh to ensure header is visible
     window.scrollTo(0, 0);
     await document.fonts?.ready;
@@ -110,4 +111,11 @@ window.addEventListener('DOMContentLoaded', async () => {
             });
         });
     }
+};
+
+if (document.readyState === 'loading') {
+    window.addEventListener('DOMContentLoaded', initializeNavbar, { once: true });
+} else {
+    initializeNavbar();
+}
 });
