@@ -177,10 +177,35 @@ body {
     color: #000;
 }
 
+.skill-bubble:hover .inner-circle .express-icon {
+    fill: #000;
+}
+
 .inner-circle i, .inner-circle .text-icon {
     font-size: 3rem;
     margin-bottom: 10px;
     color: #00ffd5;
+}
+
+.inner-circle .express-icon {
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 10px;
+    fill: #00ffd5;
+}
+
+.inner-circle .tech-logo {
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+
+.inner-circle svg[width="200"][height="200"] {
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 10px;
+    flex: 0 0 auto;
 }
 
 .inner-circle .text-icon {
@@ -256,6 +281,18 @@ body {
     .inner-circle i, .inner-circle .text-icon {
         font-size: 2.5rem;
     }
+    .inner-circle .express-icon {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .inner-circle .tech-logo {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .inner-circle svg[width="200"][height="200"] {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -273,6 +310,18 @@ body {
     }
     .inner-circle i, .inner-circle .text-icon {
         font-size: 2.2rem;
+    }
+    .inner-circle .express-icon {
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+    .inner-circle .tech-logo {
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+    .inner-circle svg[width="200"][height="200"] {
+        width: 2.2rem;
+        height: 2.2rem;
     }
     .skill-name {
         font-size: 0.95rem;
@@ -294,6 +343,18 @@ body {
     }
     .inner-circle i, .inner-circle .text-icon {
         font-size: 2rem;
+    }
+    .inner-circle .express-icon {
+        width: 2rem;
+        height: 2rem;
+    }
+    .inner-circle .tech-logo {
+        width: 2rem;
+        height: 2rem;
+    }
+    .inner-circle svg[width="200"][height="200"] {
+        width: 2rem;
+        height: 2rem;
     }
     .skill-name {
         font-size: 0.85rem;
