@@ -44,9 +44,18 @@ const initializeNavbar = async () => {
     const lastWidth = sessionStorage.getItem('sliderLastWidth');
 
     // Find the correct active item for the current page
-    const normalizePath = (path) => path.replace(/(\/index\.html|\/)$/, '');
+    const normalizePath = (path) => {
+        const decodedPath = decodeURIComponent(path).replace(/\/+/g, '/');
+        const withoutIndex = decodedPath.replace(/\/index\.html$/i, '');
+        const withoutTrailingSlash = withoutIndex.replace(/\/$/, '');
+
+        return (withoutTrailingSlash || '/').toLowerCase();
+    };
     const currentPath = normalizePath(window.location.pathname);
-    let activeItem = Array.from(items).find(item => normalizePath(new URL(item.href).pathname) === currentPath);
+    let activeItem = Array.from(items).find(item => {
+        const linkPath = new URL(item.href, window.location.origin).pathname;
+        return normalizePath(linkPath) === currentPath;
+    });
     if (!activeItem) activeItem = items[0]; // Default to home
 
     // Set active class on the correct item
