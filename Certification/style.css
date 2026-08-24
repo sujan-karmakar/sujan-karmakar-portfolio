@@ -112,13 +112,6 @@ body {
     padding-bottom: 15px;
 }
 
-.cert-header .issuer {
-    font-size: 1.2rem;
-    color: #e0e0e0;
-    font-weight: 600;
-    margin-left: 10px;
-}
-
 .cert-content {
     display: flex;
     gap: 30px;
@@ -191,13 +184,6 @@ body {
     line-height: 1.6;
     font-size: 1rem;
     margin: 0;
-}
-
-.separator {
-    font-size: 1.6rem;
-    margin: 0 8px;
-    vertical-align: -2px;
-    color: #00ffd5;
 }
 
 .view-cert-btn {
@@ -284,10 +270,4 @@ body {
         font-size: 1.3rem;
     }
     
-    .cert-header .issuer {
-        display: block;
-        margin-left: 0;
-        margin-top: 5px;
-        font-size: 0.9rem;
-    }
 }

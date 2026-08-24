@@ -1,9 +1,26 @@
 const indicator = document.querySelector('#nav-indicator');
 const items = document.querySelectorAll('.nav-item');
 
+const getIndicatorPosition = (item) => {
+    const navbar = indicator.closest('.navbar');
+    const itemBounds = item.getBoundingClientRect();
+    const navbarBounds = navbar.getBoundingClientRect();
+
+    return {
+        left: itemBounds.left - navbarBounds.left,
+        width: itemBounds.width
+    };
+};
+
+const setIndicatorPosition = (item) => {
+    const { left, width } = getIndicatorPosition(item);
+    indicator.style.left = `${left}px`;
+    indicator.style.width = `${width}px`;
+};
+
 // Store the current slider position.
 items.forEach(item => {
-    item.addEventListener('click', (e) => {
+    item.addEventListener('click', () => {
         // We save the position of the indicator AS IT IS NOW (under the current page's link)
         // This becomes the "start point" for the animation on the next page.
         sessionStorage.setItem('sliderLastLeft', indicator.offsetLeft);
@@ -17,9 +34,10 @@ if ('scrollRestoration' in history) {
 }
 
 // On page load, animate from the last position to the new one.
-window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('DOMContentLoaded', async () => {
     // Force scroll to top on refresh to ensure header is visible
     window.scrollTo(0, 0);
+    await document.fonts?.ready;
 
     const lastLeft = sessionStorage.getItem('sliderLastLeft');
     const lastWidth = sessionStorage.getItem('sliderLastWidth');
@@ -34,9 +52,6 @@ window.addEventListener('DOMContentLoaded', () => {
     items.forEach(item => item.classList.remove('active'));
     activeItem.classList.add('active');
 
-    const targetLeft = activeItem.offsetLeft;
-    const targetWidth = activeItem.offsetWidth;
-
     if (lastLeft !== null && lastWidth !== null) {
         // 1. Instantly set the slider to the LAST known position with no animation.
         indicator.classList.add('no-transition');
@@ -48,8 +63,7 @@ window.addEventListener('DOMContentLoaded', () => {
             // 3. Remove the class to re-enable the slow transition.
             indicator.classList.remove('no-transition');
             // 4. Set the final position, triggering the slow animation.
-            indicator.style.left = `${targetLeft}px`;
-            indicator.style.width = `${targetWidth}px`;
+            setIndicatorPosition(activeItem);
         }, 10);
 
         // Clear the storage so that a refreshing page doesn't trigger the animation again
@@ -58,16 +72,14 @@ window.addEventListener('DOMContentLoaded', () => {
 
     } else {
         // First visit, just set the indicator immediately.
-        indicator.style.left = `${targetLeft}px`;
-        indicator.style.width = `${targetWidth}px`;
+        setIndicatorPosition(activeItem);
     }
 
     // Update slider on resize
     let resizeTimer;
     window.addEventListener('resize', () => {
         indicator.classList.add('no-transition');
-        indicator.style.left = `${activeItem.offsetLeft}px`;
-        indicator.style.width = `${activeItem.offsetWidth}px`;
+        setIndicatorPosition(activeItem);
 
         clearTimeout(resizeTimer);
         resizeTimer = setTimeout(() => {

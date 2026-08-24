@@ -23,5 +23,5 @@ form.addEventListener('submit', (e) => {
             notification.classList.remove('show');
         }, 3000);
     })
-    .catch((error) => alert('Error sending message. Please try again.'));
+    .catch(() => alert('Error sending message. Please try again.'));
 });
